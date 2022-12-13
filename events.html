@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Events</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221214011941">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="../home.html" class="header__logo logo-header">
+					<img class="logo-header__text" src="img/logo-01.svg" alt="logo-text">
+					<img class="logo-header__text_white" src="img/logo-01-white.svg" alt="logo-text">
+					<img class="logo-header__icon" src="img/logo-02.svg" alt="logo-icon">
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="../about.html" class="menu__link">About Us</a></li>
+							<li class="menu__item"><a href="../courses.html" class="menu__link">Courses</a></li>
+							<li class="menu__item"><a href="../events.html" class="menu__link">Events</a></li>
+							<li class="menu__item"><a href="../blog.html" class="menu__link">Blog</a></li>
+							<li class="menu__item"><a href="../contacts.html" class="menu__link">Contacts</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions actions-header">
+					<button type="button" data-da=".menu__body, 768" class="actions-header__button button">Get consultation</button>
+					<button data-popup="#sing-in" type="button" class="actions-header__auth _icon-login">Log in / Register</button>
+					<button type="button" class="icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="events">
+			<section class="events__main main-events">
+				<div class="main-events__container">
+					<div class="main-events__title title title_center">
+						<div class="title__label">Our events</div>
+						<h2 class="title__text">Lectures, workshops & master-classes</h2>
+					</div>
+					<div class="main-events__filter filter-events">
+						<div class="filter-events__item">
+							<label for="main-select-category" class="filter-events__label">Event category</label>
+							<select id="main-select-category" name="main-select-category" class="filter-events__select">
+								<option class="filter-events__option" value="all-themes" selected>all themes</option>
+								<option class="filter-events__option" value="onine-master-class">Onine master-class</option>
+								<option class="filter-events__option" value="onine-lecture">Onine lecture</option>
+								<option class="filter-events__option" value="onine-workshop">Onine workshop</option>
+							</select>
+						</div>
+						<div class="filter-events__item">
+							<label for="main-select-sort" class="filter-events__label">Sort by</label>
+							<select id="main-select-sort" name="main-select-sort" class="filter-events__select">
+								<option class="filter-events__option" value="all-themes" selected>all themes</option>
+								<option class="filter-events__option" value="onine-master-class">Onine master-class</option>
+								<option class="filter-events__option" value="onine-lecture">Onine lecture</option>
+								<option class="filter-events__option" value="onine-workshop">Onine workshop</option>
+							</select>
+						</div>
+						<div class="filter-events__item filter-events__item_page">
+							<label for="main-show" class="filter-events__label">Show</label>
+							<input autocomplete="off" type="number" name="form[]" data-error="Ошибка" placeholder="9" class="filter-events__input">
+							<div class="filter-events__text">events per page</div>
+						</div>
+						<div class="filter-events__item filter-events__item_search _icon-search">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search event..." class="filter-events__input">
+						</div>
+						<div class="filter-events__item buttons-filter-events">
+							<button type="button" class="filter-events__icon _active _icon-list"></button>
+							<button type="button" class="filter-events__icon _icon-grid"></button>
+						</div>
+					</div>
+					<div class="main-events__items items-events">
+						<div class="items-events__content _flex">
+							<a href="event.html" class="event event_border">
+								<div class="event__when">
+									<div class="event__value">05</div>
+									<div class="event__date">
+										<div class="event__month">August</div>
+										<div class="event__month_grid">05 Aug</div>
+										<div class="event__time">11:00 – 14:00</div>
+									</div>
+								</div>
+								<div class="event__info">
+									<div class="event__name">Formation of the organizational structure of the company in the face of uncertainty.</div>
+									<div class="event__format">Onine master-class</div>
+								</div>
+								<div class="event__button button button_bg button_padding">View more</div>
+							</a>
+							<a href="event.html" class="event event_border">
+								<div class="event__when">
+									<div class="event__value">24</div>
+									<div class="event__date">
+										<div class="event__month">July</div>
+										<div class="event__month_grid">24 Jul</div>
+										<div class="event__time">11:00 – 12:30</div>
+									</div>
+								</div>
+								<div class="event__info">
+									<div class="event__name">Building a customer service department. Best Practices.</div>
+									<div class="event__format">Onine lecture</div>
+								</div>
+								<div class="event__button button button_bg button_padding">View more</div>
+							</a>
+							<a href="event.html" class="event event_border">
+								<div class="event__when">
+									<div class="event__value">16</div>
+									<div class="event__date">
+										<div class="event__month">July</div>
+										<div class="event__month_grid">16 Jul</div>
+										<div class="event__time">10:00 – 13:00</div>
+									</div>
+								</div>
+								<div class="event__info">
+									<div class="event__name">How to apply methods of speculative design in practice. Worldbuilding prototyping.</div>
+									<div class="event__format">Onine workshop</div>
+								</div>
+								<div class="event__button button button_bg button_padding">View more</div>
+							</a>
+							<a href="event.html" class="event event_border">
+								<div class="event__when">
+									<div class="event__value">10</div>
+									<div class="event__date">
+										<div class="event__month">July</div>
+										<div class="event__month_grid">10 Jul</div>
+										<div class="event__time">9:00 – 14:00</div>
+									</div>
+								</div>
+								<div class="event__info">
+									<div class="event__name">Find and evaluate: search and assessment tools for candidates.</div>
+									<div class="event__format">Onine workshop</div>
+								</div>
+								<div class="event__button button button_bg button_padding">View more</div>
+							</a>
+							<a href="event.html" class="event event_border">
+								<div class="event__when">
+									<div class="event__value">27</div>
+									<div class="event__date">
+										<div class="event__month">June</div>
+										<div class="event__month_grid">27 Jun</div>
+										<div class="event__time">15:00 – 19:00</div>
+									</div>
+								</div>
+								<div class="event__info">
+									<div class="event__name">Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.</div>
+									<div class="event__format">Onine master-class</div>
+								</div>
+								<div class="event__button button button_bg button_padding">View more</div>
+							</a>
+							<a href="event.html" class="event event_border">
+								<div class="event__when">
+									<div class="event__value">15</div>
+									<div class="event__date">
+										<div class="event__month">June</div>
+										<div class="event__month_grid">15 Jun</div>
+										<div class="event__time">10:00 – 12:00</div>
+									</div>
+								</div>
+								<div class="event__info">
+									<div class="event__name">Marketing or growth hacking: main differences and what business needs.</div>
+									<div class="event__format">Onine lecture</div>
+								</div>
+								<div class="event__button button button_bg button_padding">View more</div>
+							</a>
+							<a href="event.html" class="event event_border">
+								<div class="event__when">
+									<div class="event__value">02</div>
+									<div class="event__date">
+										<div class="event__month">June</div>
+										<div class="event__month_grid">02 Jun</div>
+										<div class="event__time">11:00 – 13:00</div>
+									</div>
+								</div>
+								<div class="event__info">
+									<div class="event__name">How to brief a client and present your design to approve it from the first show.</div>
+									<div class="event__format">Onine lecture</div>
+								</div>
+								<div class="event__button button button_bg button_padding">View more</div>
+							</a>
+							<a href="event.html" class="event event_border">
+								<div class="event__when">
+									<div class="event__value">29</div>
+									<div class="event__date">
+										<div class="event__month">May</div>
+										<div class="event__month_grid">29 May</div>
+										<div class="event__time">11:00 – 12:00</div>
+									</div>
+								</div>
+								<div class="event__info">
+									<div class="event__name">Who is a project manager and do I want to be PM?</div>
+									<div class="event__format">Onine lecture</div>
+								</div>
+								<div class="event__button button button_bg button_padding">View more</div>
+							</a>
+							<a href="event.html" class="event event_border">
+								<div class="event__when">
+									<div class="event__value">18</div>
+									<div class="event__date">
+										<div class="event__month">May</div>
+										<div class="event__month_grid">18 May</div>
+										<div class="event__time">10:00 – 12:00</div>
+									</div>
+								</div>
+								<div class="event__info">
+									<div class="event__name">The company's business page as an additional tool to support the announcement of vacancies.</div>
+									<div class="event__format">Onine lecture</div>
+								</div>
+								<div class="event__button button button_bg button_padding">View more</div>
+							</a>
+						</div>
+						<div class="pagging">
+							<a href="" class="pagging__arrow pagging__arrow_prev _icon-arrow"></a>
+							<ul class="pagging__list">
+								<li>
+									<a href="" class="pagging__item _active">1</a>
+								</li>
+								<li>
+									<a href="" class="pagging__item">2</a>
+								</li>
+								<li>
+									<a href="" class="pagging__item">3</a>
+								</li>
+								<li>
+									<a href="" class="pagging__item">4</a>
+								</li>
+								<li>
+									<a href="" class="pagging__item">...</a>
+								</li>
+							</ul>
+							<a href="" class="pagging__arrow pagging__arrow_next _icon-arrow"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-events__subscribe subscribe">
+				<div class="subscribe__container">
+					<div class="subscribe__title title title_center">
+						<div class="title__label">Don’t miss anything</div>
+						<h2 class="title__text">Subscribe to the Createx School announcements</h2>
+					</div>
+					<div class="subscribe__form">
+						<form action="#" class="form-subscribe">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your working email" class="form-subscribe__input">
+							<button type="submit" class="form-subscribe__button button">Subscribe</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__column">
+						<div class="footer__logo logo-footer">
+							<img class="logo-footer__text_white" src="img/logo-01-white.svg" alt="logo-text">
+							<img class="logo-footer__icon" src="img/logo-02.svg" alt="logo-icon">
+						</div>
+						<div class="footer__text footer__text_mb">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country. </div>
+						<ul class="footer__media media-footer">
+							<li class="media-footer__item">
+								<a href="#" class="media-footer__link _icon-fb"></a>
+							</li>
+							<li class="media-footer__item">
+								<a href="#" class="media-footer__link _icon-tw"></a>
+							</li>
+							<li class="media-footer__item">
+								<a href="#" class="media-footer__link _icon-yt"></a>
+							</li>
+							<li class="media-footer__item">
+								<a href="#" class="media-footer__link _icon-tg"></a>
+							</li>
+							<li class="media-footer__item">
+								<a href="#" class="media-footer__link _icon-inst"></a>
+							</li>
+							<li class="media-footer__item">
+								<a href="#" class="media-footer__link _icon-in"></a>
+							</li>
+						</ul>
+					</div>
+					<div data-spollers="768,max" class="footer__spollers spollers-footer">
+						<div class="spollers-footer__item">
+							<button type="button" data-spoller class="spollers-footer__title title-footer _icon-checkmark">SITE MAP</button>
+							<div class="spollers-footer__body">
+								<nav class="spollers-footer__list">
+									<a href="#" class="spollers-footer__link">About Us</a>
+									<a href="#" class="spollers-footer__link">Courses</a>
+									<a href="#" class="spollers-footer__link">Events</a>
+									<a href="#" class="spollers-footer__link">Blog</a>
+									<a href="#" class="spollers-footer__link">Contacts</a>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div data-spollers="768,max" class="footer__spollers spollers-footer">
+						<div class="spollers-footer__item">
+							<button type="button" data-spoller class="spollers-footer__title title-footer _icon-checkmark">COURSES</button>
+							<div class="spollers-footer__body">
+								<nav class="spollers-footer__list">
+									<a href="#" class="spollers-footer__link">Marketing</a>
+									<a href="#" class="spollers-footer__link">Management</a>
+									<a href="#" class="spollers-footer__link">HR & Recruting</a>
+									<a href="#" class="spollers-footer__link">Design</a>
+									<a href="#" class="spollers-footer__link">Development</a>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="footer__column">
+						<div class="footer__title title-footer">CONTACT US</div>
+						<a href="tel:4055550128" class="footer__link _icon-phone">(405) 555-0128</a>
+						<a href="mailto:hello@createx.com" class="footer__link _icon-mail">hello@createx.com</a>
+					</div>
+					<div class="footer__column">
+						<div class="footer__title title-footer">SIGN UP TO OUR NEWSLETTER</div>
+						<div class="footer__form">
+							<form action="#" class="form-footer">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Email address" class="form-footer__input">
+								<button type="submit" class="form-footer__button _icon-arrow"></button>
+							</form>
+						</div>
+						<div class="footer__sub-text">
+							*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom bottom-footer">
+				<div class="bottom-footer__container">
+					<div class="bottom-footer__text">© All rights reserved. Made with<span class="_icon-heart"></span>by Createx Studio </div>
+					<a href="" class="bottom-footer__go-top">GO TO TOP</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="sing-in" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<section class="popup__body">
+					<h4 class="popup__title">Sign in</h4>
+					<div class="popup__sub-title">Sign in to your account using email and password provided during registration.</div>
+					<form action="#" class="popup__form form">
+						<div class="form__item">
+							<label for="email-sing-in" class="form__label">Email</label>
+							<input id="email-sing-in" data-validate data-required="email" autocomplete="off" type="text" name="form[]" data-error="incorrect email" placeholder="Your working email" class="form__input">
+						</div>
+						<div class="form__item">
+							<label for="password-sing-in" class="form__label">Password</label>
+							<input id="password-sing-in" autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="•••••••••••••" class="form__input">
+							<button class="form__viewpass _icon-eyes" type="button"></button>
+						</div>
+						<div class="form__item action-form">
+							<div class="action-form__check">
+								<input id="keep" type="checkbox" name="form[]" class="action-form__checkbox">
+								<label for="keep" class="action-form__label">Keep me signed in</label>
+							</div>
+							<button type="button" class="action-form__button button-form">Forgot password?</button>
+						</div>
+						<div class="form__item">
+							<button type="submit" class="form__button button">Sign in</button>
+						</div>
+						<div class="form__item action-form action-form_jc">
+							<div class="form__text">Don't have an account?</div>
+							<button data-popup="#sing-up" type="button" class="form__button button-form">Sign up</button>
+						</div>
+					</form>
+					<div class="popup__text popup__text_mb">Or sign in with</div>
+					<div class="popup__sing-in-social sing-in-social">
+						<a href="#" class="sing-in-social__link _icon-fb"></a>
+						<a href="#" class="sing-in-social__link _icon-google"></a>
+						<a href="#" class="sing-in-social__link _icon-tw"></a>
+						<a href="#" class="sing-in-social__link _icon-in"></a>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<div id="sing-up" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<section class="popup__body">
+					<h4 class="popup__title">Sign up</h4>
+					<div class="popup__sub-title">Registration takes less than a minute but gives you full control over your studying.</div>
+					<form action="#" class="popup__form form">
+						<div class="form__item">
+							<label for="full-name-sing-up" class="form__label">Full Name</label>
+							<input id="full-name-sing-up" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your full name" class="form__input">
+						</div>
+						<div class="form__item">
+							<label for="email-sing-up" class="form__label">Email</label>
+							<input id="email-sing-up" data-validate data-required="email" autocomplete="off" type="text" name="form[]" data-error="incorrect email" placeholder="Your working email" class="form__input">
+						</div>
+						<div class="form__item">
+							<label for="password-sing-up" class="form__label">Password</label>
+							<input id="password-sing-up" autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="•••••••••••••" class="form__input">
+							<button class="form__viewpass _icon-eyes" type="button"></button>
+						</div>
+						<div class="form__item">
+							<label for="confirm-password-sing-up" class="form__label">Confirm Password</label>
+							<input id="confirm-password-sing-up" autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="•••••••••••••" class="form__input">
+							<button class="form__viewpass _icon-eyes" type="button"></button>
+						</div>
+						<div class="form__item action-form">
+							<div class="action-form__check">
+								<input id="remember-sing-up" type="checkbox" name="form[]" class="action-form__checkbox">
+								<label for="remember-sing-up" class="action-form__label">Remember me</label>
+							</div>
+						</div>
+						<div class="form__item">
+							<button type="submit" class="form__button button">Sign up</button>
+						</div>
+						<div class="form__item action-form action-form_jc">
+							<div class="form__text">Already have an account?</div>
+							<button data-popup="#sing-in" type="button" class="form__button button-form">Sign in</button>
+						</div>
+					</form>
+					<div class="popup__text popup__text_mb">Or sign in with</div>
+					<div class="popup__sing-in-social sing-in-social">
+						<a href="#" class="sing-in-social__link _icon-fb"></a>
+						<a href="#" class="sing-in-social__link _icon-google"></a>
+						<a href="#" class="sing-in-social__link _icon-tw"></a>
+						<a href="#" class="sing-in-social__link _icon-in"></a>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-video" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_video">
+				<button data-close type="button" class="popup__close"></button>
+				<div data-youtube-place class="popup__video">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20221214011941"></script>
+</body>
+
+</html>
