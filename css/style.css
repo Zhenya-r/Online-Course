@@ -4754,6 +4754,10 @@ textarea.form-questions__input {
   margin-top: 0.125rem;
 }
 
+.form-questions-checkbox__label {
+  line-height: 1.625;
+}
+
 .swiper {
   overflow: hidden;
 }
