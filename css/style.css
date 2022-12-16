@@ -1089,7 +1089,8 @@ body::after {
   position: absolute;
   top: 0.8125rem;
   left: 0.8125rem;
-  line-height: 1.3125;
+  font-size: 0.875rem;
+  line-height: 1.5;
   background-color: #fff;
   padding: 0 0.5rem;
   border-radius: 0.25rem;
@@ -1102,6 +1103,9 @@ body::after {
   -webkit-column-gap: 0.3125rem;
      -moz-column-gap: 0.3125rem;
           column-gap: 0.3125rem;
+  -webkit-transition: background-color, color 0.3s ease 0s;
+  -o-transition: background-color, color 0.3s ease 0s;
+  transition: background-color, color 0.3s ease 0s;
 }
 
 .info-post {
@@ -1388,9 +1392,9 @@ body::after {
   width: 100%;
   z-index: 100;
   padding: 1.25rem 0;
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  -webkit-transition: background-color 0.5s ease 0s, color 0.5s ease 0s;
+  -o-transition: background-color 0.5s ease 0s, color 0.5s ease 0s;
+  transition: background-color 0.5s ease 0s, color 0.5s ease 0s;
 }
 
 .header__container {
@@ -1770,7 +1774,14 @@ body::after {
 }
 
 @-webkit-keyframes cirlce {
-  to {
+  0% {
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+
+  100% {
     width: 5.25rem;
     height: 5.25rem;
     opacity: 0.1;
@@ -1780,7 +1791,14 @@ body::after {
 }
 
 @keyframes cirlce {
-  to {
+  0% {
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+
+  100% {
     width: 5.25rem;
     height: 5.25rem;
     opacity: 0.1;
@@ -3885,6 +3903,7 @@ body::after {
   display: grid;
   row-gap: 2rem;
   position: relative;
+  counter-reset: section;
 }
 
 .list-studying-about-us::before {
@@ -3945,6 +3964,21 @@ body::after {
 
 .list-studying-about-us__title:not(:last-child) {
   margin-bottom: 0.5rem;
+}
+
+.list-studying-about-us__title::before {
+  counter-increment: section;
+  content: "Step " counter(section);
+  display: block;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #787A80;
+}
+
+.list-studying-about-us__title::before:not(:last-child) {
+  margin-bottom: 0.125rem;
 }
 
 .list-studying-about-us__text {
@@ -10508,6 +10542,11 @@ button.swiper-pagination-bullet {
     -webkit-transform: translate(0.625rem, 0px);
         -ms-transform: translate(0.625rem, 0px);
             transform: translate(0.625rem, 0px);
+  }
+
+  .post__format:hover {
+    background-color: #FF3F3A;
+    color: #fff;
   }
 
   .item-featured-courses:hover {
