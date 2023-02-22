@@ -1,272 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./css/style.css">
-   <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «Online Course»</title>
 </head>
 
 <body>
-   <div class="wrapper">
-      <header class="header">
-         <div class="header__top top-header">
-            <div class="top-header__container">
-               <div class="top-header__actions">
-                  <div class="top-header__social social">
-                     <div class="social__text">Ми в соціальних мережах:</div>
-                     <ul class="social__list">
-                        <li class="social__item">
-                           <a href="" class="social__link">
-                              <img src="img/social/telegram.svg" alt="telegmram-icon">
-                           </a>
-                        </li>
-                        <li class="social__item">
-                           <a href="" class="social__link">
-                              <img src="img/social/facebook.svg" alt="facebook-icon">
-                           </a>
-                        </li>
-                        <li class="social__item">
-                           <a href="" class="social__link">
-                              <img src="img/social/instagram.svg" alt="instagram-icon">
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-                  <ul class="top-header__contacts contacts">
-                     <li class="contacts__item">
-                        <a href="tel:0991112233" class="contacts__link">
-                           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M17 2H7C5.89543 2 5 2.89543 5 4V20C5 21.1046 5.89543 22 7 22H17C18.1046 22 19 21.1046 19 20V4C19 2.89543 18.1046 2 17 2Z" stroke="#1E2E36" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                              <path d="M12 18H12.01" stroke="#1E2E36" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                           </svg>
-                           <span>(099) 111 22 33</span>
-                        </a>
-                        <ul id="contacts-open" class="contacts__sub-list">
-                           <li class="contacts__sub-items">
-                              <a href="tel:0991112233" class="contacts__sub-link">(099) 222 33 44</a>
-                           </li>
-                        </ul>
-                        <div class="contacts__arrows">
-                           <a href="#contacts-open" class="contacts__arrow contacts__arrow_open">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5303 8.46967C18.8232 8.76256 18.8232 9.23744 18.5303 9.53033L12.5303 15.5303C12.2374 15.8232 11.7626 15.8232 11.4697 15.5303L5.46967 9.53033C5.17678 9.23744 5.17678 8.76256 5.46967 8.46967C5.76256 8.17678 6.23744 8.17678 6.53033 8.46967L12 13.9393L17.4697 8.46967C17.7626 8.17678 18.2374 8.17678 18.5303 8.46967Z" fill="#1E2E36" />
-                              </svg>
-                           </a>
-                           <a href="#contacts-close" class="contacts__arrow contacts__arrow_close">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5303 8.46967C18.8232 8.76256 18.8232 9.23744 18.5303 9.53033L12.5303 15.5303C12.2374 15.8232 11.7626 15.8232 11.4697 15.5303L5.46967 9.53033C5.17678 9.23744 5.17678 8.76256 5.46967 8.46967C5.76256 8.17678 6.23744 8.17678 6.53033 8.46967L12 13.9393L17.4697 8.46967C17.7626 8.17678 18.2374 8.17678 18.5303 8.46967Z" fill="#1E2E36" />
-                              </svg>
-                           </a>
-                        </div>
-                     </li>
-                  </ul>
-               </div>
-               <div id="open" class="top-header__menu menu">
-                  <nav class="menu__body">
-                     <ul class="menu__list">
-                        <li class="menu__item"><a href="#" class="menu__link">Головна</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">АкцІї</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Доставка та оплата</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">про нас</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">контакти</a></li>
-                     </ul>
-                     <div class="menu__catalog catalog-menu">
-                        <div class="catalog-menu__item">
-                           <input id="catalog-menu" type="checkbox">
-                           <label for="catalog-menu" class="catalog-menu__title">Каталог</label>
-                           <div class="catalog-menu__body">
-                              <ul class="categoreis">
-                                 <li class="categoreis__item">
-                                    <input id="sofa" type="checkbox">
-                                    <label for="sofa" class="categoreis__title">дивани</label>
-                                    <div class="categoreis__body">
-                                       <ul class="categoreis__sub-list sub-list-categories">
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                       </ul>
-                                    </div>
-                                 </li>
-                                 <li class="categoreis__item">
-                                    <input id="bed" type="checkbox">
-                                    <label for="bed" class="categoreis__title">ліжка</label>
-                                    <div class="categoreis__body">
-                                       <ul class="categoreis__sub-list sub-list-categories">
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                       </ul>
-                                    </div>
-                                 </li>
-                                 <li class="categoreis__item">
-                                    <input id="chair" type="checkbox">
-                                    <label for="chair" class="categoreis__title">Крісла</label>
-                                    <div class="categoreis__body">
-                                       <ul class="categoreis__sub-list sub-list-categories">
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                       </ul>
-                                    </div>
-                                 </li>
-                                 <li class="categoreis__item">
-                                    <input id="dresser" type="checkbox">
-                                    <label for="dresser" class="categoreis__title">комоди</label>
-                                    <div class="categoreis__body">
-                                       <ul class="categoreis__sub-list sub-list-categories">
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                       </ul>
-                                    </div>
-                                 </li>
-                                 <li class="categoreis__item">
-                                    <input id="kitchen" type="checkbox">
-                                    <label for="kitchen" class="categoreis__title">кухня</label>
-                                    <div class="categoreis__body">
-                                       <ul class="categoreis__sub-list sub-list-categories">
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                       </ul>
-                                    </div>
-                                 </li>
-                                 <li class="categoreis__item">
-                                    <input id="cabinet" type="checkbox">
-                                    <label for="cabinet" class="categoreis__title">шафи</label>
-                                    <div class="categoreis__body">
-                                       <ul class="categoreis__sub-list sub-list-categories">
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                          <li class="sub-list-categories__item"><a href="#" class="sub-list-categories__link">Lorem, ipsum dolor.</a></li>
-                                       </ul>
-                                    </div>
-                                 </li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </nav>
-               </div>
-               <a href="#open" class="icon-menu"><span></span></a>
-               <a href="#close" class="close-icon-menu"><span></span></a>
-            </div>
-         </div>
-         <div class="header__main main-header">
-            <div class="main-header__container">
-               <ul class="main-header__categoreis categoreis-hover">
-                  <li class="categoreis-hover__item">
-                     <div class="categoreis-hover__title">Дивани</div>
-                     <ul class="categoreis-hover__sub-list sub-list-categoreis-hover">
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem, ipsum.</a>
-                        </li>
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem, ipsum dolor.</a>
-                        </li>
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem ipsum dolor sit.</a>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="categoreis-hover__item">
-                     <div class="categoreis-hover__title">ліжка</div>
-                     <ul class="categoreis-hover__sub-list sub-list-categoreis-hover">
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem, ipsum.</a>
-                        </li>
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem, ipsum dolor.</a>
-                        </li>
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem ipsum dolor sit.</a>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="categoreis-hover__item">
-                     <div class="categoreis-hover__title">Крісла</div>
-                     <ul class="categoreis-hover__sub-list sub-list-categoreis-hover">
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem, ipsum.</a>
-                        </li>
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem, ipsum dolor.</a>
-                        </li>
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem ipsum dolor sit.</a>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="categoreis-hover__item">
-                     <div class="categoreis-hover__title">комоди</div>
-                     <ul class="categoreis-hover__sub-list sub-list-categoreis-hover">
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem, ipsum.</a>
-                        </li>
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem, ipsum dolor.</a>
-                        </li>
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem ipsum dolor sit.</a>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="categoreis-hover__item">
-                     <div class="categoreis-hover__title">шафи</div>
-                     <ul class="categoreis-hover__sub-list sub-list-categoreis-hover">
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem, ipsum.</a>
-                        </li>
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem, ipsum dolor.</a>
-                        </li>
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem ipsum dolor sit.</a>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="categoreis-hover__item">
-                     <div class="categoreis-hover__title">Кухня</div>
-                     <ul class="categoreis-hover__sub-list sub-list-categoreis-hover">
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem, ipsum.</a>
-                        </li>
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem, ipsum dolor.</a>
-                        </li>
-                        <li class="sub-list-categoreis-hover__item">
-                           <a href="#" class="sub-list-categoreis-hover__link">Lorem ipsum dolor sit.</a>
-                        </li>
-                     </ul>
-                  </li>
-               </ul>
-               <a class="main-header__logo">
-                  <img src="./img/logo.svg" alt="logo">
-                  <span>Furniture.test</span>
-               </a>
-               <div class="main-header__actions">
-                  <a href="#" class="main-header__basket">
-                     <img src="img/icon/basket.svg" alt="basket-icon">
-                     <span>Кошик</span>
-                  </a>
-                  <button type="button" class="main-header__button button"><span>Замовити дзвінок</span></button>
-               </div>
-            </div>
-         </div>
-      </header>
-      <main class="page">
-         <div class="имя блока__container">
-
-         </div>
-      </main>
-      <footer class="footer"></footer>
-   </div>
+	<div class="rootpage">
+		<h1>Верстка «Online Course»</h1>
+		<div class="rootpage__info">
+			Опис проєкту
+		</div>
+		<h2>Готові сторінки:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Main</a></li>
+			<li><a target="_blank" href="about.html">About us</a></li>
+			<li><a target="_blank" href="blog.html">Blog</a></li>
+			<li><a target="_blank" href="contacts.html">Contacts</a></li>
+			<li><a target="_blank" href="courses.html">Courses</a></li>
+			<li><a target="_blank" href="course.html">Course</a></li>
+			<li><a target="_blank" href="event.html">Event</a></li>
+			<li><a target="_blank" href="events.html">Events</a></li>
+			<li><a target="_blank" href="post.html">Post</a></li>
+		</ol>
+		<h2>Попапи:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html#sing-in">Sing-in</a></li>
+			<li><a target="_blank" href="home.html#sing-up">Sing-up</a></li>
+			<li><a target="_blank" href="home.html#popup-video">Popup video</a></li>
+		</ol>
+		<div class="rootpage__contacts">
+			<h2>Мої контакти:</h2>
+			<p>Пошта: <a href="mailto:zhenya.radov@gmail.com">zhenya.radov@gmail.com</a></p>
+			<p>Telegram: <a target="_blank" href="https://t.me/zhenya_radov">zhenya_radov</a></p>
+		</div>
+	</div>
 </body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #5e5373;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: #c22d63;
+		margin: 0px 0px 1rem 0px;
+	}
+</style>
 
 </html>
